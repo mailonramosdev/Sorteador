@@ -1,0 +1,52 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 400px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+input {
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #000000;
+    outline: none; /* Remove o contorno padrão ao clicar */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #7282FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s; /* Suaviza a interação do usuário */
+}
+
+button:hover {
+    opacity: 0.8;
+}
